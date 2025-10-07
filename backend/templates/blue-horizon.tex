@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+% Define blue color scheme
+\definecolor{primary}{RGB}{37,99,235}
+\definecolor{secondary}{RGB}{59,130,246}
+\definecolor{text}{RGB}{31,41,55}
+
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\titlerule]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{secondary}}
+  {}{0em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% Name and title
+{\Huge\bfseries\color{primary} {{NAME}}}
+
+\vspace{0.5em}
+{\large\color{secondary} {{TITLE}}}
+
+\vspace{1em}
+\hrule height 2pt
+\vspace{0.5em}
+
+% Contact information
+\begin{center}
+{{EMAIL}} \quad $\bullet$ \quad {{PHONE}} \quad $\bullet$ \quad {{LOCATION}}\\
+{{LINKEDIN}} \quad $\bullet$ \quad {{WEBSITE}}
+\end{center}
+
+\vspace{1em}
+
+\section*{Professional Summary}
+{{SUMMARY}}
+
+\section*{Experience}
+{{EXPERIENCE}}
+
+\section*{Education}
+{{EDUCATION}}
+
+\section*{Skills}
+{{SKILLS}}
+
+\section*{Certifications}
+{{CERTIFICATIONS}}
+
+\end{document}

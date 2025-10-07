@@ -1,0 +1,16 @@
+# Core dependencies
+aiohttp==3.10.5
+aiosqlite==0.20.0
+beautifulsoup4==4.12.3
+gitpython==3.1.43
+openai==1.58.1
+python-dotenv==1.0.1
+tenacity==8.5.0
+tqdm==4.66.5
+
+# HTTP requests (for fallbacks)
+requests==2.32.3
+
+# Optional dependencies
+networkx==3.4.2  # For graph analysis of linked repos
+reportlab==4.2.5  # For PDF report generation

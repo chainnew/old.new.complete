@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased;
+  }
+  
+  * {
+    @apply transition-colors duration-200 ease-in-out;
+  }
+  
+  button, input, select, textarea {
+    @apply focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-50;
+  }
+}
+
+@layer utilities {
+  .gradient-old {
+    background: linear-gradient(to right, #fb923c, #f87171);
+  }
+
+  .gradient-new {
+    background: linear-gradient(to right, #34d399, #22d3ee);
+  }
+
+  .gradient-cta {
+    background: linear-gradient(to right, #2563eb, #06b6d4);
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+  }
+
+  .backdrop-custom {
+    backdrop-filter: blur(12px);
+    background: rgba(15, 23, 42, 0.8);
+  }
+
+  /* Fluid animations */
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.2s ease-out;
+  }
+
+  .smooth-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

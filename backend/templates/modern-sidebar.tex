@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=0.5in,bottom=0.5in,left=0.5in,right=0.5in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{paracol}
+\usepackage{tikz}
+
+% Teal color scheme
+\definecolor{primary}{RGB}{13,148,136}
+\definecolor{secondary}{RGB}{20,184,166}
+\definecolor{sidebar}{RGB}{240,253,250}
+\definecolor{text}{RGB}{31,41,55}
+
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{primary}}
+  {}{0em}{}[\color{primary}\titlerule]
+
+\titleformat{\subsection}
+  {\large\bfseries\color{secondary}}
+  {}{0em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=1pt}
+
+\begin{document}
+
+% Two column layout
+\setlength{\columnsep}{1cm}
+\begin{paracol}{2}
+
+% LEFT SIDEBAR (30%)
+\hfuzz=100pt % Suppress overfull hbox warnings for tight sidebar
+\columnratio{0.30}
+
+\begin{leftcolumn}
+
+\section*{Contact}
+\small
+{{EMAIL}}\\[0.3em]
+{{PHONE}}\\[0.3em]
+{{LOCATION}}\\[0.3em]
+{{LINKEDIN}}\\[0.3em]
+{{WEBSITE}}
+
+\vspace{1em}
+
+\section*{Skills}
+{{SKILLS}}
+
+\vspace{1em}
+
+\section*{Certifications}
+{{CERTIFICATIONS}}
+
+\end{leftcolumn}
+
+% RIGHT MAIN CONTENT (70%)
+\begin{rightcolumn}
+
+{\Huge\bfseries\color{primary} {{NAME}}}
+
+\vspace{0.3em}
+{\large\color{secondary} {{TITLE}}}
+
+\vspace{1em}
+
+\section*{Professional Summary}
+{{SUMMARY}}
+
+\section*{Experience}
+{{EXPERIENCE}}
+
+\section*{Education}
+{{EDUCATION}}
+
+\end{rightcolumn}
+
+\end{paracol}
+
+\end{document}

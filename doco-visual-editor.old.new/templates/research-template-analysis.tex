@@ -1,0 +1,464 @@
+\documentclass[11pt, a4paper]{article}
+
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{enumitem} % For better lists
+
+% PAGE & DOCUMENT SETUP
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Personal System Security Analysis: Hardware Anomalies},
+    pdfpagemode=FullScreen,
+}
+\urlstyle{same}
+
+% SECTION FORMATTING
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% CODE LISTING STYLE
+\definecolor{codegray}{rgb}{0.95,0.95,0.95}
+\definecolor{commentgreen}{rgb}{0,0.5,0}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{warningorange}{rgb}{1,0.5,0}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{commentgreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{darkgray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single,
+    framerule=0pt,
+    rulecolor=\color{black},
+}
+\lstset{style=mystyle}
+
+% WARNING BOX
+\newcommand{\warningbox}[1]{
+    \begin{center}
+    \fcolorbox{warningorange}{white}{
+        \begin{minipage}{0.95\textwidth}
+            \centering
+            \textbf{\color{warningorange}⚠️  SECURITY CONCERN ⚠️}\\
+            \vspace{0.2cm}
+            #1
+            \vspace{0.2cm}
+            \small \textit{Further investigation recommended}
+        \end{minipage}
+    }
+    \end{center}
+}
+
+% DOCUMENT START
+\begin{document}
+
+% TITLE PAGE
+\title{
+    \Huge \textbf{Personal System Security Analysis:}\\
+    \vspace{0.2cm}
+    \LARGE \textbf{[Hardware] Anomalies and System Concerns} \\
+    \vspace{1.5cm}
+    \large \textbf{Technical Assessment Report - Revision [X.X]} \\
+    \vspace{0.5cm}
+    \normalsize \textit{Documentation of Observed System Behavior on Personal Devices} \\
+    \vspace{0.3cm}
+    \normalsize \textit{[Date]}
+}
+\author{Security Researcher}
+\date{[Date]}
+\maketitle
+\thispagestyle{empty}
+
+% ABSTRACT
+\begin{abstract}
+\noindent
+\textbf{Revision [X.X] - [Date]} documents observed anomalies and security concerns across multiple personal [hardware] devices running [OS version]. This technical assessment focuses on documented system behavior identified through forensic analysis, including [list key areas, e.g., dynamic linker cache configurations, system integrity settings].
+
+\noindent
+The analysis covers [number] [hardware] devices in personal use, with findings indicating potential security configuration issues that warrant further investigation. Key observations include [summarize key findings, e.g., the presence of architecture caches, modifications to configuration files].
+
+\noindent
+This report presents empirical findings from system-level analysis conducted between [date range], documenting observed behavior across personal hardware configurations. The assessment identifies areas of concern that may indicate non-standard system operation requiring professional evaluation.
+
+\noindent
+\textbf{Assessment Summary:} [X/Y] security checks identified anomalies requiring further investigation. Recommendations include professional forensic analysis, system isolation, and consultation with [vendor] support services.
+\end{abstract}
+\clearpage
+
+% TABLE OF CONTENTS
+\tableofcontents
+\clearpage
+
+% #################### EXECUTIVE SUMMARY ####################
+
+\section{Executive Summary}
+
+\subsection{Overview of Analysis}
+This report documents system behavior observed across personal [hardware] devices between [date range]. The analysis focuses on technical anomalies identified through forensic examination of [list methods, e.g., system logs, configuration files, and runtime behavior].
+
+\textbf{Devices Analyzed:}
+\begin{itemize}
+    \item [Device 1] - [Description, e.g., Primary analysis system]
+    \item [Device 2] - [Description, e.g., Secondary system]
+    \item [Device 3] - [Description, e.g., Tertiary system]
+    \item [Device 4] - [Description, e.g., Unopened, retained for reference]
+\end{itemize}
+
+\textbf{Methodology:} Comprehensive system analysis using [describe methods, e.g., log examination, configuration verification, and runtime monitoring]. The assessment identifies deviations from expected system behavior that may indicate security configuration concerns.
+
+\subsection{Key Findings}
+Analysis conducted on [date] identified the following observations across personal devices:
+
+\begin{itemize}
+    \item \textbf{[Area 1, e.g., Dynamic Linker Configuration]:} [Observation, e.g., Presence of architecture caches on hardware]
+    \item \textbf{[Area 2, e.g., System Integrity Settings]:} [Observation, e.g., Modification observed in configuration file]
+    \item \textbf{[Area 3, e.g., Bluetooth Activity]:} [Observation, e.g., Elevated logging activity despite disabled settings]
+    \item \textbf{[Area 4, e.g., Wireless Configuration]:} [Observation, e.g., Power events recorded]
+    \item \textbf{[Area 5, e.g., Research Tool Presence]:} [Observation, e.g., System paths containing designated binaries]
+    \item \textbf{[Area 6, e.g., Boot-Time Logging]:} [Observation, e.g., References to mode during initialization]
+    \item \textbf{[Area 7, e.g., iBridge Reporting]:} [Observation, e.g., Standard status while showing variances]
+\end{itemize}
+
+\subsection{Assessment Scope and Limitations}
+This analysis represents personal system examination and documentation of observed behavior. Findings indicate potential security configuration concerns that warrant professional evaluation. The assessment does not constitute formal security certification or external validation.
+
+\begin{table}[H]
+\centering
+\caption{Technical Assessment Summary - Revision [X.X]}
+\label{tab:assessment_summary}
+\begin{tabular}{@{}p{4cm}p{5cm}p{3cm}@{}}
+\toprule
+\textbf{Area of Concern} & \textbf{Observation} & \textbf{Status} \\ \midrule
+[Area 1] & [Description] & [Status, e.g., Requires investigation] \\
+[Area 2] & [Description] & [Status, e.g., Configuration concern] \\
+[Area 3] & [Description] & [Status, e.g., Background service activity] \\
+[Area 4] & [Description] & [Status, e.g., Firmware operation] \\
+[Area 5] & [Description] & [Status, e.g., Environment configuration] \\
+[Area 6] & [Description] & [Status, e.g., Possible dev settings] \\
+[Area 7] & [Description] & [Status, e.g., Verification needed] \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{System Configuration Analysis}
+
+\subsection{[Configuration Area 1, e.g., Dynamic Linker Cache Examination]}
+Analysis of [component, e.g., the dynamic linker shared cache] revealed the presence of [observations, e.g., both architectures on hardware]. The [specific, e.g., x86_64 caches] total approximately [size] and include supporting files.
+
+\begin{lstlisting}[language=bash, caption={[Area] Configuration - [Date]}, label={lst:dyld_cache}]
+# [Describe files observed]
+[Insert command, e.g., ls -la /path/to/files]
+
+# [Additional commands, e.g., String analysis]
+[Insert output placeholders]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize findings, e.g., The presence of caches may relate to compatibility. All files share the same modification timestamp, which may correspond to a system change.]
+
+\subsection{System Integrity Configuration Review}
+Examination of [component, e.g., system integrity protection configuration] revealed a modification in [file, e.g., the rootless.conf file] affecting [aspect, e.g., kernel extension handling].
+
+\begin{lstlisting}[language=bash, caption={System Integrity Configuration - [File] Analysis}, label={lst:rootless}]
+# [Line examination command]
+[Insert command/output placeholders]
+
+# [Timestamp command]
+[Insert output]
+
+# [Status commands]
+[Insert commands/outputs]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., The configuration uses a pattern that may permit additional loading while maintaining protection. The query indicates non-vendor extensions approved.]
+
+\section{[Activity Area, e.g., Bluetooth and Wireless Activity Analysis]}
+
+\subsection{[Subarea 1, e.g., Bluetooth Service Examination]}
+Monitoring of [service, e.g., Bluetooth services] revealed elevated logging activity despite the [setting, e.g., GUI toggle being disabled].
+
+\begin{lstlisting}[language=bash, caption={[Service] Activity Monitoring - [Date]}, label={lst:bluetooth}]
+# [Status check]
+[Insert commands]
+
+# [Log analysis]
+[Insert commands/outputs]
+
+# [Sample entries]
+[Insert commands/outputs]
+
+# [Hardware status]
+[Insert command/output]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., The process remains active with events recorded, including notifications. This occurs despite disabled status, possibly relating to background services.]
+
+\subsection{[Subarea 2, e.g., Wireless Interface Activity]}
+Analysis of [interface, e.g., wireless interface logging] identified [events, e.g., power management events] during the monitoring period.
+
+\begin{lstlisting}[language=bash, caption={[Interface] Activity}, label={lst:wireless}]
+# [Event commands]
+[Insert commands/outputs]
+
+# [Status checks]
+[Insert commands/outputs]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., Events were recorded. The status shows disabled, while profiler confirms configuration. These may represent standard transitions.]
+
+\section{[Tool Area, e.g., Development and Research Tool Analysis]}
+
+\subsection{System [Component, e.g., Research Components]}
+Examination of [directories, e.g., system directories] revealed the presence of [designated, e.g., research-designated binaries and files].
+
+\begin{lstlisting}[language=bash, caption={[Component] Analysis}, label={lst:research_components}]
+# [Search commands]
+[Insert commands/outputs]
+
+# [File analysis]
+[Insert commands/outputs]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., Several components were identified, sharing timestamps with configuration changes. The presence may relate to environment setup.]
+
+\subsection{[Framework, e.g., Virtualization Framework Components]}
+The [framework] contains [designated, e.g., research-designated binaries].
+
+\begin{lstlisting}[language=bash, caption={[Framework] Components}, label={lst:virtualization}]
+# [List commands]
+[Insert commands/outputs]
+
+# [Analysis, e.g., Binary string examination]
+[Insert commands/outputs]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., The files include references to policy and functionality. These may support activities within the framework.]
+
+\section{[Process Area, e.g., Boot Process and Security Logging]}
+
+\subsection{[Subarea 1, e.g., Kernel Boot Sequence Analysis]}
+Examination of [logs, e.g., kernel boot logs] identified references to [mode, e.g., developer mode] and [messages, e.g., security verification] during initialization.
+
+\begin{lstlisting}[language=bash, caption={Boot Sequence Logging Analysis}, label={lst:boot_sequence}]
+# [Log show commands]
+[Insert commands/outputs]
+
+# [Count commands]
+[Insert commands/outputs]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., The sequence includes references to activation and configuration. Messages were recorded. These may relate to environment settings.]
+
+\subsection{[Subarea 2, e.g., iBridge Security Coprocessor Status]}
+The [coprocessor] reports standard configuration while analysis shows variations.
+
+\begin{lstlisting}[language=bash, caption={[Coprocessor] Security Status Examination}, label={lst:ibridge}]
+# [Profiler command]
+[Insert command/output]
+
+# [Extension checks]
+[Insert commands/outputs]
+
+# [Policy check]
+[Insert command/output]
+\end{lstlisting}
+
+\textbf{Observations:} [Generalize, e.g., Reports standard security. Policy shows approved extensions. This may indicate operation with components.]
+
+\section{[Device Area, e.g., Unopened Device Documentation]}
+
+\subsection{[Device Type, e.g., Reference Device]}
+The unopened [device] has been retained as a reference. Documentation of its current state is provided below.
+
+\begin{lstlisting}[language=text, caption={Reference Device Documentation}, label={lst:reference_device}]
+REFERENCE DEVICE DOCUMENTATION
+==============================
+Device: [Description]
+Serial Number: [Placeholder]
+Configuration: [Specs]
+Purchase Date: [Date]
+Source: [Source]
+Current Status: [Status]
+Packaging: [Description]
+
+PHYSICAL EXAMINATION ([Date]):
+- External condition: [Description]
+- [Seal/Verification]: [Status]
+- [Additional]: [Details]
+- Storage location: [Description]
+
+INTENDED PURPOSE:
+- [Purpose 1]
+- [Purpose 2]
+- [Purpose 3]
+
+NOTE: Device remains [status] and will only be examined under controlled conditions.
+\end{lstlisting}
+
+\textbf{Documentation Notes:} [Generalize, e.g., The reference provides a baseline for comparison. Its condition preserves configuration for analysis.]
+
+\section{Recommendations}
+
+\subsection{Immediate Technical Steps}
+Based on the observed system behavior, the following actions are recommended:
+
+\begin{enumerate}
+    \item \textbf{Professional System Analysis:} Consult with [vendor] support for evaluation
+    \item \textbf{Configuration Verification:} Review with technical support
+    \item \textbf{Log Analysis:} Have logs analyzed professionally
+    \item \textbf{[Service] Review:} Consult regarding activity with disabled settings
+    \item \textbf{[Environment] Assessment:} Verify components with support
+\end{enumerate}
+
+\subsection{System Maintenance Recommendations}
+\begin{itemize}
+    \item Ensure all systems receive regular [OS] updates
+    \item Maintain current backups for recovery
+    \item Monitor performance and activity through utilities
+    \item Review installed extensions and status
+    \item Document behavior changes for reference
+\end{itemize}
+
+\subsection{Professional Support Contact}
+For evaluation, contact [vendor] support:
+\begin{itemize}
+    \item [Support Line/Contact]
+    \item [Appointment Option]
+    \item [Security Contact]
+\end{itemize}
+
+\section{Conclusion}
+
+This technical assessment documents observed system behavior across personal [hardware] devices from [date range]. The analysis identified several [patterns, e.g., configuration and logging] that deviate from expected operation and warrant evaluation.
+
+Key observations include [summarize, e.g., dual caches, variations, activity, components, and logging]. These indicate potential areas of concern.
+
+The documentation serves as a record for support engagement. The reference device provides a baseline.
+
+Professional analysis is recommended to address concerns and ensure security.
+
+\vspace{1cm}
+\begin{center}
+    \textbf{[Date]}\\
+    \textbf{Security Researcher}\\
+    \textbf{Personal Technical Assessment}
+\end{center}
+
+\section{Appendices}
+
+\subsection{Appendix A: System Verification Log}
+\begin{lstlisting}[language=bash, caption={System Verification Summary - [Date]}, label={lst:verification_summary}]
+SYSTEM VERIFICATION SUMMARY
+===========================
+Date: [Date]
+Platform: [OS Version]
+Hardware: [Description]
+Serial: [Placeholder]
+Memory: [Specs]
+
+KEY OBSERVATIONS:
+- [Observation 1]
+- [Observation 2]
+- [Observation 3]
+- [Observation 4]
+- [Observation 5]
+- [Observation 6]
+- [Observation 7]
+
+CONFIGURATION NOTES:
+- All timestamps: [Timestamp]
+- [Extensions]: [Number] approved
+- System updates: [Status]
+
+RECOMMENDATION: Professional evaluation recommended
+\end{lstlisting}
+
+\subsection{Appendix B: Verification Commands}
+\begin{lstlisting}[language=bash, caption={System Analysis Commands}, label={lst:analysis_commands}]
+# [Area 1 verification]
+[Insert placeholder command]
+
+# [Area 2 check]
+[Insert placeholder command]
+
+# [Area 3 monitoring]
+[Insert placeholder command]
+
+# [Area 4 events]
+[Insert placeholder command]
+
+# [Area 5 components]
+[Insert placeholder command]
+
+# [Area 6 logging]
+[Insert placeholder command]
+
+# [Area 7 status]
+[Insert placeholder command]
+\end{lstlisting}
+
+\subsection{Appendix C: Device Inventory}
+\begin{table}[H]
+\centering
+\caption{Personal Device Inventory}
+\label{tab:device_inventory}
+\begin{tabular}{@{}p{3cm}p{2cm}p{3cm}p{4cm}@{}}
+\toprule
+\textbf{Device} & \textbf{Serial} & \textbf{Configuration} & \textbf{Status} \\ \midrule
+[Device 1] & [Placeholder] & [Specs] & [Status] \\
+[Device 2] & [Placeholder] & [Specs] & [Status] \\
+[Device 3] & [Placeholder] & [Specs] & [Status] \\
+[Device 4] & [Placeholder] & [Specs] & [Status] \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Appendix D: Timeline of Observations}
+\begin{table}[H]
+\centering
+\caption{Observation Timeline}
+\label{tab:observation_timeline}
+\begin{tabular}{@{}p{2.5cm}p{5cm}p{2.5cm}@{}}
+\toprule
+\textbf{Date} & \textbf{Observation} & \textbf{Device} \\ \midrule
+[Date 1] & [Description] & [Device] \\
+[Date 2] & [Description] & [Device] \\
+[Date 3] & [Description] & [Device] \\
+[Date 4] & [Description] & [Device] \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

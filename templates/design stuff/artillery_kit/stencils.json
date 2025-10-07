@@ -1,0 +1,24 @@
+{
+  "stencils": [
+    {
+      "name": "default-stencil",
+      "code": "<div class=\"modular-ui\">Modular UI Stub</div>"
+    },
+    {
+      "name": "default-stencil",
+      "code": "<div class=\"modular-ui\">Modular UI Stub</div>"
+    },
+    {
+      "name": "default-stencil",
+      "code": "<div class=\"modular-ui\">Modular UI Stub</div>"
+    },
+    {
+      "name": "default-stencil",
+      "code": "<div class=\"modular-ui\">Modular UI Stub</div>"
+    },
+    {
+      "name": "default-stencil",
+      "code": "<div class=\"modular-ui\">Modular UI Stub</div>"
+    }
+  ]
+}

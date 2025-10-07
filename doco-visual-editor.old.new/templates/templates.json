@@ -1,0 +1,66 @@
+{
+  "templates": [
+    {
+      "id": "modern-resume-blue",
+      "name": "Modern Professional Resume (Blue)",
+      "description": "Clean, modern resume template with Source Sans Pro font, navy blue accents, and professional layout optimized for ATS systems",
+      "category": "professional",
+      "tags": ["resume", "cv", "professional", "modern", "blue", "ats-friendly"],
+      "file": "modern-resume-blue.tex",
+      "features": [
+        "Source Sans Pro font for modern typography",
+        "Navy blue color scheme (#003366)",
+        "FontAwesome icons for contact info",
+        "Multi-column skills section",
+        "Clean section separators",
+        "ATS-optimized formatting",
+        "Two-column layout for projects & certifications"
+      ],
+      "useCase": "Job seekers looking for a modern, professional resume with clean typography and excellent readability"
+    },
+    {
+      "id": "forensic-supply-chain-analysis",
+      "name": "Forensic Supply Chain Analysis",
+      "description": "Comprehensive forensic investigation template for supply chain contamination analysis with digital fingerprinting, timestamp correlation, and propagation mapping",
+      "category": "security",
+      "tags": ["forensics", "security", "supply-chain", "analysis", "investigation"],
+      "file": "forensic-supply-chain-analysis.tex",
+      "features": [
+        "TikZ diagrams for visual analysis",
+        "Syntax-highlighted code blocks",
+        "Timestamp correlation tables",
+        "Propagation mapping",
+        "Digital fingerprint analysis",
+        "Environmental vector tracking"
+      ],
+      "useCase": "Security researchers, forensic analysts, incident response teams investigating supply chain compromises or system contamination"
+    }
+  ],
+  "categories": {
+    "professional": {
+      "name": "Professional Documents",
+      "description": "Templates for resumes, CVs, cover letters, and professional correspondence",
+      "icon": "user"
+    },
+    "security": {
+      "name": "Security & Forensics",
+      "description": "Templates for security analysis, forensic investigations, and incident response",
+      "icon": "shield"
+    },
+    "academic": {
+      "name": "Academic & Research",
+      "description": "Templates for academic papers, research reports, and scholarly documents",
+      "icon": "book"
+    },
+    "business": {
+      "name": "Business & Professional",
+      "description": "Templates for business documents, proposals, and professional reports",
+      "icon": "briefcase"
+    },
+    "technical": {
+      "name": "Technical Documentation",
+      "description": "Templates for technical reports, documentation, and specifications",
+      "icon": "code"
+    }
+  }
+}

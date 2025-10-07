@@ -1,0 +1,6 @@
+source,target,type
+vuejs/awesome-vue,default-stencil,depends
+troxler/awesome-css-frameworks,default-stencil,depends
+TheComputerM/awesome-svelte,default-stencil,depends
+anubhavsrivastava/awesome-ui-component-library,default-stencil,depends
+xitanggg/open-resume,default-stencil,depends

@@ -1,0 +1,79 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+% Adjust page margins
+\geometry{a4paper, margin=1in}
+
+% Define colors for syntax highlighting
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Configure the listings package for code blocks
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    rulecolor=\color{black},
+    title=\lstname
+}
+\lstset{style=mystyle}
+
+% Setup hyperref for links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+% Title, Author, and Date
+\title{\textbf{{{TITLE}}}}
+\author{{{AUTHOR}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \textbf{System:} {{SYSTEM}} \\
+    \textbf{Status:} {{STATUS}}
+\end{center}
+
+\hrulefill
+
+\section*{Executive Summary}
+
+{{EXECUTIVE_SUMMARY}}
+
+{{KEY_FINDINGS}}
+
+{{CONCLUDING_REMARKS}}
+
+\hrulefill
+\vspace{1cm}
+
+{{CONTENT_SECTIONS}}
+
+\end{document}

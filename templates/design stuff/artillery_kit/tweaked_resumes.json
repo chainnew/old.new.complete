@@ -1,0 +1,44 @@
+{
+  "tweaks": [
+    {
+      "name": "base-tweak",
+      "features": [
+        "responsive-design",
+        "dark-mode-support",
+        "modular-slots"
+      ]
+    },
+    {
+      "name": "base-tweak",
+      "features": [
+        "responsive-design",
+        "dark-mode-support",
+        "modular-slots"
+      ]
+    },
+    {
+      "name": "base-tweak",
+      "features": [
+        "responsive-design",
+        "dark-mode-support",
+        "modular-slots"
+      ]
+    },
+    {
+      "name": "base-tweak",
+      "features": [
+        "responsive-design",
+        "dark-mode-support",
+        "modular-slots"
+      ]
+    },
+    {
+      "name": "base-tweak",
+      "features": [
+        "responsive-design",
+        "dark-mode-support",
+        "modular-slots"
+      ]
+    }
+  ]
+}

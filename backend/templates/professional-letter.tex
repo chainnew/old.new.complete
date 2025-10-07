@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+
+\definecolor{textgray}{RGB}{60,60,60}
+\definecolor{accentblue}{RGB}{37,99,235}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+% Header
+\begin{flushright}
+{\small
+\textbf{{{SENDER_NAME}}}\\
+{{SENDER_ADDRESS}}\\
+{{SENDER_PHONE}} \quad | \quad {{SENDER_EMAIL}}
+}
+\end{flushright}
+
+\vspace{1em}
+
+% Date
+{{DATE}}
+
+\vspace{1em}
+
+% Recipient
+{{RECIPIENT_NAME}}\\
+{{RECIPIENT_TITLE}}\\
+{{RECIPIENT_COMPANY}}\\
+{{RECIPIENT_ADDRESS}}
+
+\vspace{1em}
+
+% Subject line (optional)
+{{SUBJECT_LINE}}
+
+\vspace{0.5em}
+
+% Salutation
+{{SALUTATION}}
+
+\vspace{0.5em}
+
+% Body
+{{BODY_CONTENT}}
+
+\vspace{1em}
+
+% Closing
+{{CLOSING}}
+
+\vspace{2em}
+
+{{SENDER_NAME}}
+
+{{SIGNATURE_BLOCK}}
+
+\end{document}

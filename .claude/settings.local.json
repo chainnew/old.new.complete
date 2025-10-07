@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(tree:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(npm install)",
+      "Bash(sudo chown:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(node:*)",
+      "Bash(npm --version)",
+      "Bash(test:*)",
+      "Bash(psql:*)",
+      "Bash(redis-cli:*)",
+      "Bash(createdb:*)",
+      "Bash(brew services start:*)",
+      "Read(//Users/matto/**)",
+      "Bash(PORT=5174 npm run dev)",
+      "Bash(cat:*)",
+      "Bash(lsof:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(git checkout:*)",
+      "Bash(npx prettier:*)",
+      "Bash(npx tsc:*)",
+      "Bash(echo:*)",
+      "Bash(mkdir:*)",
+      "Bash(./start.sh:*)",
+      "Bash(npm run typecheck:*)",
+      "Bash(./stop.sh)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

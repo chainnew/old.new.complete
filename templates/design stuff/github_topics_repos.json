@@ -1,0 +1,180 @@
+{
+  "topics": {
+    "tailwindcss": {
+      "top_repos": [
+        {
+          "full_name": "tailwindlabs/tailwindcss",
+          "relevance_score": 100,
+          "why": "Core Tailwind CSS framework for utility-first UI styling"
+        },
+        {
+          "full_name": "shadcn-ui/ui",
+          "relevance_score": 95,
+          "why": "Modular, accessible UI components built with Tailwind and Radix UI"
+        },
+        {
+          "full_name": "saadeghi/daisyui",
+          "relevance_score": 95,
+          "why": "Pre-built Tailwind CSS component library for rapid UI development"
+        },
+        {
+          "full_name": "tailwindlabs/headlessui",
+          "relevance_score": 90,
+          "why": "Unstyled, accessible UI primitives compatible with Tailwind"
+        },
+        {
+          "full_name": "magicuidesign/magicui",
+          "relevance_score": 90,
+          "why": "Animated UI components library for React and Tailwind"
+        },
+        {
+          "full_name": "tremorlabs/tremor-npm",
+          "relevance_score": 85,
+          "why": "Tailwind-based UI components for data dashboards and charts"
+        },
+        {
+          "full_name": "AmruthPillai/Reactive-Resume",
+          "relevance_score": 80,
+          "why": "Modern resume builder with Tailwind-powered UI and themes"
+        },
+        {
+          "full_name": "onlook-dev/onlook",
+          "relevance_score": 75,
+          "why": "Visual editor for Tailwind CSS UI prototyping"
+        },
+        {
+          "full_name": "shadcn-ui/taxonomy",
+          "relevance_score": 75,
+          "why": "E-commerce UI demo using shadcn/ui and Tailwind components"
+        },
+        {
+          "full_name": "calcom/cal.com",
+          "relevance_score": 70,
+          "why": "Scheduling app with clean Tailwind UI interfaces"
+        },
+        {
+          "full_name": "pure-admin/vue-pure-admin",
+          "relevance_score": 70,
+          "why": "Vue admin dashboard with Tailwind CSS styling"
+        },
+        {
+          "full_name": "wandb/openui",
+          "relevance_score": 70,
+          "why": "Generative UI tool leveraging Tailwind for modular designs"
+        },
+        {
+          "full_name": "plausible/analytics",
+          "relevance_score": 65,
+          "why": "Privacy-focused analytics dashboard using Tailwind UI"
+        },
+        {
+          "full_name": "dubinc/dub",
+          "relevance_score": 65,
+          "why": "Link management tool with Tailwind-based modern UI"
+        },
+        {
+          "full_name": "t3-oss/create-t3-app",
+          "relevance_score": 60,
+          "why": "Full-stack starter with Tailwind for UI scaffolding"
+        },
+        {
+          "full_name": "heyverse/hey",
+          "relevance_score": 60,
+          "why": "Chat interface built with Tailwind components"
+        }
+      ],
+      "summary": "Tailwind ecosystem emphasizes modular, accessible UI components, themes, and dashboards; strong focus on React/Vue integrations and rapid prototyping tools.",
+      "expansion_queries": [
+        "tailwind ui components stars:>100",
+        "daisyui alternatives stars:>50",
+        "headless ui tailwind stars:>200",
+        "tailwind admin templates stars:>50",
+        "magic ui react components stars:>100"
+      ]
+    },
+    "html5": {
+      "top_repos": [
+        {
+          "full_name": "froala/design-blocks",
+          "relevance_score": 90,
+          "why": "Collection of modular HTML5/CSS UI design blocks and templates"
+        },
+        {
+          "full_name": "tabler/tabler",
+          "relevance_score": 85,
+          "why": "HTML5-based UI kit with icons and responsive components"
+        },
+        {
+          "full_name": "h5bp/html5-boilerplate",
+          "relevance_score": 80,
+          "why": "Standard HTML5 template for building modern UI projects"
+        },
+        {
+          "full_name": "chartjs/Chart.js",
+          "relevance_score": 80,
+          "why": "HTML5 canvas-based charting library for data UI visualization"
+        },
+        {
+          "full_name": "cobiwave/simplefolio",
+          "relevance_score": 75,
+          "why": "Minimal HTML5/CSS/JS portfolio template with clean UI"
+        },
+        {
+          "full_name": "videojs/video.js",
+          "relevance_score": 75,
+          "why": "HTML5 video player with customizable UI controls"
+        },
+        {
+          "full_name": "mrdoob/three.js",
+          "relevance_score": 70,
+          "why": "WebGL library for interactive 3D UI elements in HTML5"
+        },
+        {
+          "full_name": "novnc/noVNC",
+          "relevance_score": 70,
+          "why": "HTML5 canvas VNC client with web-based UI interface"
+        },
+        {
+          "full_name": "captbaritone/webamp",
+          "relevance_score": 65,
+          "why": "HTML5/JS recreation of Winamp UI for browser media"
+        }
+      ],
+      "summary": "HTML5 repos highlight foundational UI templates, interactive components like charts/videos, and canvas-based visualizations; emphasis on responsive, modular web designs.",
+      "expansion_queries": [
+        "html5 ui components stars:>100",
+        "html5 boilerplate templates stars:>50",
+        "canvas ui libraries html5 stars:>200",
+        "html5 design blocks stars:>50",
+        "responsive html5 kits stars:>100"
+      ]
+    }
+  },
+  "overall_unique_repos": [
+    "tailwindlabs/tailwindcss",
+    "shadcn-ui/ui",
+    "saadeghi/daisyui",
+    "tailwindlabs/headlessui",
+    "magicuidesign/magicui",
+    "tremorlabs/tremor-npm",
+    "AmruthPillai/Reactive-Resume",
+    "onlook-dev/onlook",
+    "shadcn-ui/taxonomy",
+    "calcom/cal.com",
+    "pure-admin/vue-pure-admin",
+    "wandb/openui",
+    "plausible/analytics",
+    "dubinc/dub",
+    "t3-oss/create-t3-app",
+    "heyverse/hey",
+    "froala/design-blocks",
+    "tabler/tabler",
+    "h5bp/html5-boilerplate",
+    "chartjs/Chart.js",
+    "cobiwave/simplefolio",
+    "videojs/video.js",
+    "mrdoob/three.js",
+    "novnc/noVNC",
+    "captbaritone/webamp"
+  ]
+}

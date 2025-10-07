@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% A MODERN PROFESSIONAL RESUME/CV
+%
+% Copyright (C) 2025 by [Template Author]
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper]{article}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}             % Input encoding
+\usepackage[T1]{fontenc}                % Font encoding for better character rendering
+\usepackage[sfdefault]{sourcesanspro}   % Use Source Sans Pro as the default font
+\usepackage[margin=0.75in]{geometry}    % Set page margins
+\usepackage{enumitem}                   % For creating custom lists
+\usepackage{titlesec}                   % For custom section titles
+\usepackage{fontawesome5}               % For icons (email, phone)
+\usepackage[dvipsnames]{xcolor}         % For defining custom colors
+\usepackage{hyperref}                   % For clickable links (e.g., email)
+\usepackage{multicol}                   % For creating multi-column layouts
+
+% --- COLOR DEFINITIONS ---
+% A modern, professional color palette is defined here.
+\definecolor{primary}{HTML}{003366}   % Dark Navy Blue for headings and accents
+\definecolor{secondary}{HTML}{333333} % Dark Gray for main text for better readability than pure black
+\definecolor{lightgray}{HTML}{666666}  % Lighter gray for dates, company names, etc.
+
+% --- HYPERLINK SETUP ---
+% Configures PDF metadata and link colors.
+\hypersetup{
+    colorlinks=true,
+    urlcolor=primary,
+    linkcolor=primary,
+    pdftitle={[Your Name] - Resume},
+    pdfauthor={[Your Name]},
+}
+
+% --- LAYOUT & TYPOGRAPHY ---
+\pagestyle{empty}                       % No page numbers or headers
+\setlength{\parindent}{0pt}             % No paragraph indentation
+\renewcommand{\familydefault}{\sfdefault} % Set default font to sans-serif (Source Sans Pro)
+\color{secondary}                       % Set default text color for the document
+
+% --- SECTION TITLE FORMATTING ---
+% Defines a clean, modern style for section titles.
+\titleformat{\section}
+  {\Large\bfseries\scshape\color{primary}} % Format: Large, bold, small caps, primary color
+  {}                                    % No section number displayed
+  {0em}                                 % Space between number and title
+  {}                                    % Code to execute before the title
+  [\titlerule[1pt]]                     % A 1pt thick rule underneath the title
+\titlespacing*{\section}{0pt}{14pt}{8pt}  % Spacing: left, before, after
+
+% --- LIST FORMATTING ---
+% Configure itemize for job descriptions to be clean and compact.
+\setlist[itemize]{
+    leftmargin=*,
+    label=\textbullet,
+    noitemsep,
+    topsep=3pt,
+    partopsep=0pt
+}
+
+%================================================================================
+% DOCUMENT START
+%================================================================================
+\begin{document}
+
+% --- HEADER ---
+% Name is large and prominent, contact info is aligned to the right.
+\begin{minipage}[t]{0.65\textwidth}
+    \raggedright
+    {\Huge\bfseries\color{primary} [YOUR NAME]}\\[4pt]
+    {\large\color{lightgray} [Professional Title]}
+\end{minipage}%
+\begin{minipage}[t]{0.35\textwidth}
+    \raggedleft
+    \vspace{-4pt} % Fine-tunes vertical alignment of contact info
+    \small
+    \href{mailto:[your.email@example.com]}{\faEnvelope\ [your.email@example.com]} \\
+    \faPhone\ [Phone Number]
+\end{minipage}
+
+\vspace{12pt} % Space after header block
+
+% --- PROFESSIONAL SUMMARY ---
+\section*{Professional Summary}
+[Brief summary of your professional background, expertise, and achievements. E.g., Professional with X years of experience in [field/sector]. Proven track record in [key areas]. Expert in [specific skills/technologies].]
+
+% --- CORE COMPETENCIES ---
+\section*{Core Competencies}
+% Using a multi-column list makes skills easy and quick to scan.
+\begin{itemize}[label=\textcolor{primary}{\textbullet}, itemsep=2pt]
+    \setlength{\multicolsep}{0pt}
+    \begin{multicols}{3}
+        \item [Skill/Competency 1]
+        \item [Skill/Competency 2]
+        \item [Skill/Competency 3]
+        \item [Skill/Competency 4]
+        \item [Skill/Competency 5]
+        \item [Skill/Competency 6]
+        \item [Skill/Competency 7]
+        \item [Skill/Competency 8]
+        \item [Skill/Competency 9]
+    \end{multicols}
+\end{itemize}
+
+% --- PROFESSIONAL EXPERIENCE ---
+\section*{Professional Experience}
+
+% A consistent format for each job entry enhances readability.
+\noindent\textbf{\large [Job Title 1]} \hfill \textcolor{lightgray}{[Start Date] -- [End Date]}\\
+\textit{[Company Name], [Department/Location]}
+\begin{itemize}
+    \item [Achievement/Responsibility 1 for this role.]
+    \item [Achievement/Responsibility 2 for this role.]
+    \item [Achievement/Responsibility 3 for this role.]
+    \item [Achievement/Responsibility 4 for this role.]
+    \item [Achievement/Responsibility 5 for this role.]
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent\textbf{\large [Job Title 2]} \hfill \textcolor{lightgray}{[Start Date] -- [End Date]}\\
+\textit{[Company Name], [Department/Location]}
+\begin{itemize}
+    \item [Achievement/Responsibility 1 for this role.]
+    \item [Achievement/Responsibility 2 for this role.]
+    \item [Achievement/Responsibility 3 for this role.]
+    \item [Achievement/Responsibility 4 for this role.]
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent\textbf{\large [Job Title 3]} \hfill \textcolor{lightgray}{[Start Date] -- [End Date]}\\
+\textit{[Company Name], [Department/Location]}
+\begin{itemize}
+    \item [Achievement/Responsibility 1 for this role.]
+    \item [Achievement/Responsibility 2 for this role.]
+    \item [Achievement/Responsibility 3 for this role.]
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent\textbf{\large [Job Title 4]} \hfill \textcolor{lightgray}{[Start Date] -- [End Date]}\\
+\textit{[Company Name], [Department/Location]}
+\begin{itemize}
+    \item [Achievement/Responsibility 1 for this role.]
+    \item [Achievement/Responsibility 2 for this role.]
+    \item [Achievement/Responsibility 3 for this role.]
+\end{itemize}
+
+\vspace{6pt}
+
+\noindent\textbf{\large [Job Title 5]} \hfill \textcolor{lightgray}{[Start Date] -- [End Date]}\\
+\textit{[Company Name], [Department/Location]}
+\begin{itemize}
+    \item [Achievement/Responsibility 1 for this role.]
+    \item [Achievement/Responsibility 2 for this role.]
+    \item [Achievement/Responsibility 3 for this role.]
+\end{itemize}
+
+% --- EDUCATION ---
+\section*{Education}
+\noindent\textbf{[Degree/Certificate]} \hfill \textcolor{lightgray}{[Year]}\\
+\noindent\textbf{[Degree/Certificate]} \hfill \textcolor{lightgray}{[Year]}
+
+% --- SELECTED PROJECTS & CERTIFICATIONS ---
+% Using minipages to create two columns for the final sections saves space and looks tidy.
+\section*{Selected Projects \& Certifications}
+
+\begin{minipage}[t]{0.6\textwidth}
+    \raggedright
+    \textbf{\color{primary}Selected Projects}
+    \begin{itemize}[label={}, leftmargin=10pt, itemsep=2pt]
+        \item \textbf{[Project Name]} -- [Brief description and impact.]
+        \item \textbf{[Project Name]} -- [Brief description and impact.]
+        \item \textbf{[Project Name]} -- [Brief description and impact.]
+    \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.4\textwidth}
+    \raggedright
+    \textbf{\color{primary}Certifications}
+    \begin{itemize}[label=\textbullet, itemsep=2pt]
+        \item [Certification 1]
+        \item [Certification 2]
+        \item [Certification 3]
+        \item [Certification 4]
+        \item [Certification 5]
+        \item [Certification 6]
+    \end{itemize}
+\end{minipage}
+
+\end{document}

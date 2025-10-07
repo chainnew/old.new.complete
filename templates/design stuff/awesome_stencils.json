@@ -1,0 +1,448 @@
+{
+  "enaqx/awesome-react": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil inspired by React UI libraries in awesome-react lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Modular Tailwind button component from common React ecosystem patterns"
+      },
+      {
+        "name": "ui-theme-wrapper",
+        "code": "<div class='bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 p-4 text-white'>Themed Content</div>",
+        "description": "Simple gradient theme stencil drawing from design resources in awesome-react"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow",
+      "gradient": "bg-gradient-to-r from-indigo-500 to-purple-600"
+    },
+    "stars": 70201,
+    "description": "A collection of awesome things regarding React ecosystem"
+  },
+  "wasabeef/awesome-android-ui": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-4 border border-gray-200'>Card Content</div>",
+        "description": "Material Design-inspired card stencil from awesome Android UI libraries, adapted to Tailwind for modular components"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Primary Button</button>",
+        "description": "Standard button pattern from Android UI resources, Tailwind/Shadcn style for primary actions"
+      },
+      {
+        "name": "ui-theme-card",
+        "code": "<div class='bg-gradient-to-r from-purple-400 to-pink-500 text-white rounded-lg p-4 shadow-lg'>Themed Content</div>",
+        "description": "Gradient theme card example inspired by colorful Android UI libraries in the awesome list"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-300 shadow-none bg-white",
+      "gradient": "bg-gradient-to-r from-indigo-500 to-blue-500 text-white"
+    },
+    "stars": 53999,
+    "description": "A curated list of awesome Android UI/UX libraries"
+  },
+  "brillout/awesome-react-components": {
+    "stencil_patterns": [
+      {
+        "name": "default-stencil",
+        "code": "<div class=\"modular-ui\">Awesome UI Stub</div>",
+        "description": "Fallback from awesome list"
+      }
+    ],
+    "tweaked_variants": {
+      "default": "bg-white text-black"
+    },
+    "stars": 45721,
+    "description": "Curated List of React Components & Libraries."
+  },
+  "DovAmir/awesome-design-patterns": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil, modular component for displaying content blocks"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Standard Tailwind button component for actions and interactions"
+      },
+      {
+        "name": "ui-alert",
+        "code": "<div class='bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded'>Alert Message</div>",
+        "description": "Simple Tailwind alert for notifications, inspired by common UI patterns"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow"
+    },
+    "stars": 44304,
+    "description": "A curated list of software and architecture related design patterns."
+  },
+  "alebcay/awesome-shell": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil from awesome lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Standard Tailwind button component"
+      },
+      {
+        "name": "ui-theme",
+        "code": "<div class='bg-gradient-to-r from-purple-400 to-blue-500 text-white p-4'>Theme Example</div>",
+        "description": "Simple gradient theme stencil"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow"
+    },
+    "stars": 35466,
+    "description": "A curated list of awesome command-line frameworks, toolkits, guides and gizmos. Inspired by awesome-php."
+  },
+  "AllThingsSmitty/css-protips": {
+    "stencil_patterns": [
+      {
+        "name": "button-primary",
+        "code": "<button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline\">Primary Button</button>",
+        "description": "Modular Tailwind button inspired by CSS protips for interactive elements"
+      },
+      {
+        "name": "ui-card",
+        "code": "<div class=\"bg-white rounded-lg shadow-md p-6 border border-gray-200\">Card Content</div>",
+        "description": "Basic Tailwind card stencil for content blocks, drawing from layout tips in CSS protips"
+      },
+      {
+        "name": "input-field",
+        "code": "<input class=\"border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent\" type=\"text\" placeholder=\"Enter text\">",
+        "description": "Standard Tailwind input field with focus states, based on form styling patterns"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600 hover:bg-gray-700 focus:ring-gray-400",
+      "minimal": "bg-transparent border border-gray-200 shadow-none rounded-md p-4"
+    },
+    "stars": 29462,
+    "description": "\u26a1\ufe0f A collection of tips to help take your CSS skills pro \ud83e\uddbe"
+  },
+  "tmrts/go-patterns": {
+    "stencil_patterns": [
+      {
+        "name": "button-primary",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Primary Button</button>",
+        "description": "Standard primary button component using Tailwind CSS, common in UI design pattern lists."
+      },
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic card stencil for displaying content, inspired by modular UI patterns."
+      },
+      {
+        "name": "input-field",
+        "code": "<input type='text' class='border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500' placeholder='Enter text'>",
+        "description": "Simple input field with focus states, a staple in form design patterns."
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-200 shadow-none bg-transparent",
+      "theme-blue": "bg-blue-100 border-blue-300 text-blue-900"
+    },
+    "stars": 26924,
+    "description": "Curated list of Go design patterns, recipes and idioms"
+  },
+  "Lissy93/dashy": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-4 border border-gray-200'>Dashboard Widget Content</div>",
+        "description": "Modular card component for dashboard sections, inspired by Tailwind and Dashy widget patterns"
+      },
+      {
+        "name": "button-primary",
+        "code": "<button class='bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition-colors'>Primary Action</button>",
+        "description": "Standard primary button for interactions, Tailwind-based with hover effects"
+      },
+      {
+        "name": "theme-switcher",
+        "code": "<button class='flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors' onclick='toggleTheme()'>\ud83c\udf19</button>",
+        "description": "Simple theme toggle button for light/dark mode, common in dashboard UIs like Dashy"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-300 shadow-none bg-white",
+      "compact": "p-3 rounded-md"
+    },
+    "stars": 22669,
+    "description": "\ud83d\ude80 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!"
+  },
+  "jbee37142/Interview_Question_for_Beginner": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil from awesome UI lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Click Me</button>",
+        "description": "Standard Tailwind button component for interactive elements"
+      },
+      {
+        "name": "ui-theme-switch",
+        "code": "<button class='px-4 py-2 bg-gray-200 rounded toggle-theme'>Toggle Theme</button>",
+        "description": "Simple theme toggle button inspired by Shadcn UI patterns"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-300 shadow-none bg-transparent",
+      "gradient": "bg-gradient-to-r from-blue-500 to-purple-600"
+    },
+    "stars": 20976,
+    "description": ":boy: :girl: Technical-Interview guidelines written for those who started studying programming. I wish you all the best. :space_invader:"
+  },
+  "birobirobiro/awesome-shadcn-ui": {
+    "stencil_patterns": [
+      {
+        "name": "button",
+        "code": "<button class=\"inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700\">Button</button>",
+        "description": "Basic shadcn/ui-inspired Tailwind button component from awesome lists"
+      },
+      {
+        "name": "card",
+        "code": "<div class=\"bg-white rounded-lg border shadow-sm p-6\">Card Content</div>",
+        "description": "Modular card stencil using Tailwind classes common in shadcn/ui resources"
+      },
+      {
+        "name": "theme-wrapper",
+        "code": "<div class=\"bg-background text-foreground p-4\">Themed Content</div>",
+        "description": "Basic theme stencil for light/dark mode in shadcn/ui patterns"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-900 text-white border-gray-700",
+      "minimal": "border border-gray-300 shadow-none bg-white"
+    },
+    "stars": 17678,
+    "description": "A curated list of awesome things related to shadcn/ui."
+  },
+  "unixorn/awesome-zsh-plugins": {
+    "stencil_patterns": [
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Basic Tailwind button stencil from awesome UI lists"
+      },
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil from awesome lists"
+      },
+      {
+        "name": "ui-theme",
+        "code": ":root { --primary: #3b82f6; --secondary: #10b981; --bg: #ffffff; --text: #111827; }",
+        "description": "Default light theme variables inspired by Tailwind/Shadcn"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white rounded-lg shadow-lg",
+      "minimal": "border border-gray-200 p-4 no-shadow bg-transparent"
+    },
+    "stars": 16864,
+    "description": "A collection of ZSH frameworks, plugins, themes and tutorials."
+  },
+  "mikeroyal/Self-Hosting-Guide": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil from awesome lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Standard Tailwind button component example"
+      },
+      {
+        "name": "ui-theme-switch",
+        "code": "<button class='p-2 rounded-full bg-gray-200' onclick='toggleTheme()'>\ud83c\udf19</button>",
+        "description": "Simple theme toggle inspired by modular designs"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow"
+    },
+    "stars": 16681,
+    "description": "Self-Hosting Guide. Learn all about  locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking."
+  },
+  "aniftyco/awesome-tailwindcss": {
+    "stencil_patterns": [
+      {
+        "name": "ui-button",
+        "code": "<button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\">Button</button>",
+        "description": "Modular Tailwind button component, inspired by Shadcn UI patterns in awesome lists"
+      },
+      {
+        "name": "ui-card",
+        "code": "<div class=\"bg-white rounded-lg shadow-md p-6\">Card Content</div>",
+        "description": "Basic Tailwind card stencil, common in UI resource collections like Tailwind UI"
+      },
+      {
+        "name": "ui-input",
+        "code": "<input class=\"border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500\" type=\"text\" placeholder=\"Enter text\">",
+        "description": "Simple form input with Tailwind classes, seen in component libraries from awesome Tailwind resources"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-200 shadow-none bg-transparent"
+    },
+    "stars": 14581,
+    "description": "\ud83d\ude0e Awesome things related to Tailwind CSS"
+  },
+  "bnb/awesome-hyper": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil inspired by modular UI patterns in awesome lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Standard button component with hover effects, Tailwind/Shadcn style"
+      },
+      {
+        "name": "color-scheme",
+        "code": ":root { --bg-primary: #1e1e1e; --text-primary: #ffffff; --accent: #bd93f9; }",
+        "description": "Dark terminal-inspired color scheme from Hyper themes like Dracula"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white rounded-lg shadow-lg",
+      "minimal": "border border-gray-300 p-4 no-shadow",
+      "light": "bg-white text-gray-900 border border-gray-200"
+    },
+    "stars": 10886,
+    "description": "\ud83d\udda5 Delightful Hyper plugins, themes, and resources"
+  },
+  "rehooks/awesome-react-hooks": {
+    "stencil_patterns": [
+      {
+        "name": "button-primary",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Primary Button</button>",
+        "description": "Modular Tailwind button stencil for primary actions"
+      },
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil for content display"
+      },
+      {
+        "name": "theme-container",
+        "code": "<div class='min-h-screen bg-gray-100 py-8'>Theme Wrapper</div>",
+        "description": "Simple theme container for layout themes"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow"
+    },
+    "stars": 10131,
+    "description": "Awesome React Hooks"
+  },
+  "troxler/awesome-css-frameworks": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic card component inspired by Tailwind CSS patterns common in awesome CSS framework lists like Bootstrap and Bulma derivatives."
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Primary Button</button>",
+        "description": "Modular button stencil from Shadcn/Tailwind influences in curated CSS resources, emphasizing hover states."
+      },
+      {
+        "name": "ui-theme",
+        "code": "<div class='bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded'>Theme Accent</div>",
+        "description": "Color scheme example drawing from modern CSS frameworks like Tailwind themes in awesome lists, for gradient-based UIs."
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white",
+      "minimal": "border border-gray-200 no-shadow",
+      "gradient": "bg-gradient-to-r from-indigo-500 to-blue-500"
+    },
+    "stars": 8922,
+    "description": "List of awesome CSS frameworks in 2025"
+  },
+  "friuns2/BlackFriday-GPTs-Prompts": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil for displaying content blocks, common in awesome UI lists"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Button</button>",
+        "description": "Modular Tailwind button component for actions, inspired by Shadcn patterns"
+      },
+      {
+        "name": "ui-theme-card",
+        "code": "<div class='bg-gradient-to-r from-purple-400 to-pink-500 text-white p-4 rounded-lg'>Theme Preview</div>",
+        "description": "Color scheme stencil for themes, using gradients as seen in design resource lists"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-200 shadow-none bg-transparent"
+    },
+    "stars": 8613,
+    "description": "List of free GPTs that doesn't require plus subscription "
+  },
+  "humhub/humhub": {
+    "stencil_patterns": [
+      {
+        "name": "ui-card",
+        "code": "<div class='bg-white rounded-lg shadow-md p-6'>Card Content</div>",
+        "description": "Basic Tailwind card stencil for social network posts, inspired by HumHub's modular UI patterns"
+      },
+      {
+        "name": "ui-button",
+        "code": "<button class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Action Button</button>",
+        "description": "Primary button stencil using Tailwind, common in HumHub-like interfaces for interactions"
+      },
+      {
+        "name": "ui-theme-switch",
+        "code": "<div class='flex items-center space-x-2'><input type='checkbox' class='toggle toggle-primary'> Dark Mode</div>",
+        "description": "Theme toggle component inspired by extensible social network designs"
+      }
+    ],
+    "tweaked_variants": {
+      "dark": "bg-gray-800 text-white border-gray-600",
+      "minimal": "border border-gray-200 shadow-none bg-transparent"
+    },
+    "stars": 6524,
+    "description": "HumHub is an Open Source Enterprise Social Network. Easy to install, intuitive to use and extendable with countless freely available modules."
+  }
+}

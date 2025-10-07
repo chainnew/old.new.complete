@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage[dvipsnames]{xcolor}
+
+% Modern Sidebar - Teal color scheme
+\definecolor{sectionteal}{RGB}{13,148,136}
+\definecolor{textteal}{RGB}{20,184,166}
+\definecolor{textgray}{RGB}{60,60,60}
+
+\titleformat{\section}{\large\bfseries\color{textgray}}{\thesection}{0em}{}[{\color{sectionteal}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=2pt,itemsep=3pt}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+  {\Huge\bfseries\color{textgray} {{NAME}}}\\[0.4em]
+  {\color{sectionteal}\rule{0.3\textwidth}{0.5pt}}\\[0.3em]
+  {\small \faEnvelope\ {{EMAIL}} \quad | \quad \faPhone\ {{PHONE}}{{LOCATION_SECTION}}}
+\end{center}
+
+\vspace{0.3cm}
+
+\section*{PROFESSIONAL SUMMARY}
+\textcolor{textgray}{{{SUMMARY}}}
+
+\section*{EDUCATION}
+{{EDUCATION}}
+
+\section*{CORE COMPETENCIES}
+\textcolor{textgray}{{{SKILLS}}}
+
+\section*{PROFESSIONAL EXPERIENCE}
+{{EXPERIENCE}}
+
+{{CERTIFICATIONS_SECTION}}
+
+\end{document}

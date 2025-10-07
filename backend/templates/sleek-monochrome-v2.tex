@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+% Sleek Monochrome color scheme
+\definecolor{headercolor}{RGB}{31,41,55}
+\definecolor{linkcolor}{RGB}{75,85,99}
+\definecolor{sectiongray}{RGB}{100,100,100}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor
+}
+
+% Section formatting
+\sectionfont{\color{headercolor}\Large\bfseries}
+\subsectionfont{\color{headercolor}\normalsize\bfseries}
+\titleformat{\section}{\Large\bfseries\color{headercolor}}{}{0em}{}[\titlerule]
+
+% Custom lists for compactness
+\setlist[itemize]{leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt}
+
+% No page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\bfseries\color{headercolor} {{NAME}}} \\[0.2em]
+    {\Large {{TITLE}}} \\[1em]
+    {\normalsize
+        \textbf{Contact:} {{PHONE}} \quad | \quad
+        \href{mailto:{{EMAIL}}}{{{EMAIL}}}{{LINKEDIN_SECTION}}{{LOCATION_SECTION}}
+    }
+\end{center}
+
+\vspace{0.5em}
+\rule{\textwidth}{0.4pt}
+
+\section{Professional Summary}
+{{SUMMARY}}
+
+\section{Professional Education}
+{{EDUCATION}}
+
+\section{Professional Experience}
+{{EXPERIENCE}}
+
+\section{Technical Competencies}
+{{SKILLS}}
+
+{{CERTIFICATIONS_SECTION}}
+
+\end{document}

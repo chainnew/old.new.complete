@@ -1,0 +1,80 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Color scheme
+\definecolor{primary}{RGB}{37,99,235}
+\definecolor{textgray}{RGB}{60,60,60}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{primary}}{}{0em}{}[\color{primary}\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{textgray}}{}{0em}{}
+
+\setlist[itemize]{leftmargin=*,itemsep=3pt}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+\begin{document}
+
+% Title Page
+\begin{center}
+    \vspace*{2cm}
+    {\Huge\bfseries\color{primary} {{PROJECT_TITLE}}}\\[1em]
+    {\Large {{PROJECT_SUBTITLE}}}\\[3em]
+
+    {\large
+    \textbf{Prepared by:} {{AUTHOR_NAME}}\\
+    \textbf{Organization:} {{ORGANIZATION}}\\
+    \textbf{Date:} {{DATE}}
+    }
+    \vspace{3cm}
+\end{center}
+
+\newpage
+
+\section*{Executive Summary}
+{{EXECUTIVE_SUMMARY}}
+
+\section*{Project Overview}
+{{PROJECT_OVERVIEW}}
+
+\section*{Objectives}
+{{OBJECTIVES}}
+
+\section*{Scope}
+{{SCOPE}}
+
+\subsection*{In Scope}
+{{IN_SCOPE}}
+
+\subsection*{Out of Scope}
+{{OUT_OF_SCOPE}}
+
+\section*{Methodology}
+{{METHODOLOGY}}
+
+\section*{Timeline}
+{{TIMELINE}}
+
+\section*{Budget}
+{{BUDGET}}
+
+\section*{Team \& Resources}
+{{TEAM_RESOURCES}}
+
+\section*{Risk Assessment}
+{{RISK_ASSESSMENT}}
+
+\section*{Success Criteria}
+{{SUCCESS_CRITERIA}}
+
+\section*{Conclusion}
+{{CONCLUSION}}
+
+\end{document}

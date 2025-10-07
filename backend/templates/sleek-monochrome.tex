@@ -1,0 +1,64 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontspec}
+
+% Grayscale color scheme
+\definecolor{primary}{RGB}{31,41,55}
+\definecolor{secondary}{RGB}{75,85,99}
+\definecolor{accent}{RGB}{107,114,128}
+
+% Modern minimal section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{primary}}
+  {}{0em}{}[\vspace{-0.5em}{\color{accent}\hrulefill}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{secondary}}
+  {}{0em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0}
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\setlist[itemize]{leftmargin=*, topsep=0pt, partopsep=0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\Huge\bfseries {{NAME}}}\\[0.5em]
+{\Large\color{secondary} {{TITLE}}}\\[1em]
+\color{accent} {{EMAIL}} $\mid$ {{PHONE}} $\mid$ {{LOCATION}}\\
+{{LINKEDIN}} $\mid$ {{WEBSITE}}
+\end{center}
+
+\vspace{1.5em}
+
+\section{Professional Summary}
+\color{text}
+{{SUMMARY}}
+
+\section{Professional Experience}
+{{EXPERIENCE}}
+
+\section{Education}
+{{EDUCATION}}
+
+\section{Technical Skills}
+{{SKILLS}}
+
+\section{Certifications \& Awards}
+{{CERTIFICATIONS}}
+
+\end{document}
